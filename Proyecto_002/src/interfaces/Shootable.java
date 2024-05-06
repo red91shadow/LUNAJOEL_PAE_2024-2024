@@ -1,6 +1,15 @@
 package interfaces;
 
-public interface Shootable {
+import java.util.ArrayList;
 
-	void shoot();
+import javax.swing.JFrame;
+
+import Model.Bullet;
+
+
+
+public interface Shootable {
+	
+	public void shoot(ArrayList<Bullet> nw);
+
 }
