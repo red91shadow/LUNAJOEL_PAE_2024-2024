@@ -4,11 +4,11 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 import interfaces.Drawable;
-import interfaces.MoubleX;
+import interfaces.MovableH;
 
 
 
-public class Spacecraft implements Drawable, MoubleX{
+public class Spacecraft implements Drawable, MovableH{
 	int[] XPoints = {400,450,350};
 	
 	int[] YPoints = {500,550,550};

@@ -6,10 +6,10 @@ import java.util.Timer;
 import javax.swing.JFrame;
 
 import interfaces.Drawable;
-import interfaces.Mouble;
+import interfaces.Movable;
 
 
-public class Ship implements Drawable, Mouble{
+public class Ship implements Drawable, Movable{
 	int[] XPoints = new int[5];
 	int[] YPoints = new int[5];
 	

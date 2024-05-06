@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface Mouble {
+public interface Movable {
 	
 	
 	public void moveUp(int distance);

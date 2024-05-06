@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface MoubleX {
+public interface MovableH {
 	
 	public void moveRigth(int distance);
 	public void moveLeft(int distance);
