@@ -1,0 +1,37 @@
+CREATE TABLE Estudiantes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT
+);
+
+CREATE TABLE Profesores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT
+);
+
+CREATE TABLE Materias (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    description TEXT,
+    credit INT
+);
+
+
+CREATE TABLE Horarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_subject INT,
+    id_student INT,
+    id_teacher INT,
+    start_time TIME,
+    end_time TIME,
+    FOREIGN KEY (id_subject) REFERENCES Materias(id),
+    FOREIGN KEY (id_student) REFERENCES Estudiantes(id),
+    FOREIGN KEY (id_teacher) REFERENCES Profesores(id)
+);
+
+SELECT id FROM Materias;
+
+
